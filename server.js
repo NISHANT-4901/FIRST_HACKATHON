@@ -25,17 +25,17 @@ app.use('/study', studyRoutes);
 
 // Serve the home page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, "CODE", "index.html"));
 });
 
 // Serve the dashboard page
 app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+    res.sendFile(path.join(__dirname, "CODE", "dashboard.html"));
 });
 
 // Serve the login page
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Login.html'));
+    res.sendFile(path.join(__dirname, "CODE", "Login.html"));
 });
 
 // // Serve the register page
@@ -45,7 +45,7 @@ app.get('/login', (req, res) => {
 
 // Serve the leaderboard page
 app.get('/leaderboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'leaderBoard.html'));
+    res.sendFile(path.join(__dirname, "CODE", "leaderBoard.html"));
 });
 
 // Add this route for testing
